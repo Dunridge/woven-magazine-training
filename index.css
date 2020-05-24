@@ -102,6 +102,88 @@ div.see-films, div.see-stories {
     align-items: center;
 }
 
+/* stories container */
+
+
+div.row-1, div.row-2, div.row-3, div.row-4 {
+    display: flex;
+    margin: 20px;
+}
+
+.article {
+    margin-right: 20px;
+}
+
+#article-image-1 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_ShantellMartin_home-1.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-2 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/02_Cre_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-3 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/03_WV_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-4 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_JustinChung_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-5 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/04_Joekenneth_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-6 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_Antelope_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-7 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/09/01-CodyCobb_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+#article-image-8 {
+    background-image: url("https://wovenmagazine.com/content/uploads/2019/09/01-JulianneAhn_home.jpg");
+    background-size: cover;
+    height: 314px;
+    width: 470px;
+}
+
+/* featured blog posts */
+
+section.blogs > header {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-blogs {
+    display: flex;
+    width: 981px;
+    margin-right: 100px;
+    margin-left: 150px;
+}
+
 /* footer styles */
 
 footer {
