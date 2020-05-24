@@ -1,0 +1,116 @@
+html {
+    margin: 0;
+}
+
+/* styling nav  */
+
+nav,
+.shop-menue,
+.search-menue,
+.menue-title,
+.search,
+.cart-btn,
+.woven-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-around;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0.125px;
+}
+
+/* main banner  */
+
+div.main-banner {
+    background: url('https://wovenmagazine.com/content/uploads/2019/09/01-CodyCobb_banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 722.4px;
+}
+
+/* woven tagline */
+
+div.woven-tagline {
+    display: flex;
+    justify-content: space-evenly;
+    height: 216px;
+}
+
+div.woven-tagline > div.col-1, div.col-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.col-1 > h1 > span:nth-child(2) {
+    font-weight: 200;
+    font-style: italic;
+}
+
+div.col-2 {
+    align-items: flex-start;
+    
+}
+
+div.col-2 > h2 {
+    font-size: 12px;
+}
+
+div.col-2 > p {
+    margin-top: 0px;
+    /* width: 450px; */
+    width: 80%;
+}
+
+div.col-2 > h2 {
+    margin-bottom: 5px;
+}
+
+/* stories */
+
+section.stories {
+    margin: 139px;
+}
+
+div.stories-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+div.stories-menue {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.see-films-and-stories {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+div.see-films, div.see-stories {
+    display: flex;
+    align-items: center;
+}
+
+/* footer styles */
+
+footer {
+    background: #e5e5e5;
+    height: 195px;
+    margin: 0px;
+}
+
+footer > .col {
+    display: flex;
+    justify-content: space-evenly;
+}
