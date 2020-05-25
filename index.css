@@ -43,7 +43,8 @@ div.woven-tagline {
     height: 216px;
 }
 
-div.woven-tagline > div.col-1, div.col-2 {
+div.woven-tagline > div.col-1,
+div.col-2 {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,6 @@ div.col-1 > h1 > span:nth-child(2) {
 
 div.col-2 {
     align-items: flex-start;
-    
 }
 
 div.col-2 > h2 {
@@ -76,6 +76,12 @@ div.col-2 > h2 {
 }
 
 /* stories */
+
+div.stories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 section.stories {
     margin: 139px;
@@ -97,74 +103,82 @@ div.see-films-and-stories {
     width: 30%;
 }
 
-div.see-films, div.see-stories {
+div.see-films,
+div.see-stories {
     display: flex;
     align-items: center;
 }
 
 /* stories container */
 
-
-div.row-1, div.row-2, div.row-3, div.row-4 {
+div.row-1,
+div.row-2,
+div.row-3,
+div.row-4 {
     display: flex;
     margin: 20px;
 }
 
 .article {
     margin-right: 20px;
+    margin-left: 50px;
+}
+
+.story-info > p {
+    width: 470px;
 }
 
 #article-image-1 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_ShantellMartin_home-1.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/01_ShantellMartin_home-1.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-2 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/02_Cre_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/02_Cre_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-3 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/03_WV_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/03_WV_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-4 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_JustinChung_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/01_JustinChung_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-5 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/04_Joekenneth_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/04_Joekenneth_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-6 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/10/01_Antelope_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/10/01_Antelope_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-7 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/09/01-CodyCobb_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/09/01-CodyCobb_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
 }
 
 #article-image-8 {
-    background-image: url("https://wovenmagazine.com/content/uploads/2019/09/01-JulianneAhn_home.jpg");
+    background-image: url('https://wovenmagazine.com/content/uploads/2019/09/01-JulianneAhn_home.jpg');
     background-size: cover;
     height: 314px;
     width: 470px;
@@ -177,11 +191,70 @@ section.blogs > header {
     justify-content: center;
 }
 
+section.blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .featured-blogs {
     display: flex;
+    justify-content: space-around;
     width: 981px;
-    margin-right: 100px;
-    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.blog-1,
+.blog-2,
+.blog-3,
+.blog-4 {
+    width: 160px;
+}
+
+.blog-1 > p.blog-title,
+.blog-2 > p.blog-title,
+.blog-3 > p.blog-title,
+.blog-4 > p.blog-title {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.blog-1 > p.blog-body,
+.blog-2 > p.blog-body,
+.blog-3 > p.blog-body,
+.blog-4 > p.blog-body {
+    font-family: "p22-underground",sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#blog-image-1 {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://wovenmagazine.com/content/uploads/2016/08/00a_Cover-360x360.jpg');
+    background-size: cover;
+}
+
+#blog-image-2 {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://wovenmagazine.com/content/uploads/2016/03/MuireCover-360x360.jpg');
+    background-size: cover;
+}
+
+#blog-image-3 {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://wovenmagazine.com/content/uploads/2015/11/campfire_cover-360x360.jpg');
+    background-size: cover;
+}
+
+#blog-image-4 {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://wovenmagazine.com/content/uploads/2015/10/LA_Cover1-360x360.jpg');
+    background-size: cover;
 }
 
 /* footer styles */
