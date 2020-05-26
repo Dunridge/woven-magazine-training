@@ -269,3 +269,26 @@ footer > .col {
     display: flex;
     justify-content: space-evenly;
 }
+
+/* overlay menu */
+ 
+nav.hidden {
+    position: absolute;
+    z-index: 10;
+    /* TODO: change it to fit the viewport */
+    background-color: rgb(187, 179, 179, 0.4);
+    height: 3938px;
+    width: 100%;
+}
+
+div.menue-options {
+    display: flex;
+    justify-content: center;
+}
+
+div.menue-options > ul > li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
