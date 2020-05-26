@@ -271,12 +271,11 @@ footer > .col {
 }
 
 /* overlay menu */
- 
 nav.hidden {
     position: absolute;
     z-index: 10;
-    /* TODO: change it to fit the viewport */
-    background-color: rgb(187, 179, 179, 0.4);
+    background-color: rgba(255,255,255, 0.9);
+    position: fixed;
     height: 3938px;
     width: 100%;
 }
@@ -292,3 +291,12 @@ div.menue-options > ul > li {
     justify-content: center;
 }
 
+div.menue-options > ul > li > p {
+    color: #c5c5c5;
+    font-size: 32px;
+}
+
+div.menue-options > ul > li:nth-child(1) > p {
+    margin-top: 100px;
+    font-size: 32px;
+}
