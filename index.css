@@ -1,4 +1,4 @@
-html {
+html, body {
     margin: 0;
 }
 
@@ -22,6 +22,7 @@ nav {
     height: 50px;
     background-color: white;
     box-shadow: 0px 0.125px;
+    margin-top: -0.05px;
 }
 
 /* main banner  */
@@ -288,15 +289,31 @@ div.menue-options {
 div.menue-options > ul > li {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 div.menue-options > ul > li > p {
     color: #c5c5c5;
     font-size: 32px;
+    margin-top: 0px;
 }
 
-div.menue-options > ul > li:nth-child(1) > p {
+#hidden-menue > div > ul > li:not(:nth-child(1)) > p:nth-child(1) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #1AA170;
+    font-style: italic;
+    font-weight: 600;
+}
+
+div.menue-options > ul > li:nth-child(1) > p:nth-child(1) {
     margin-top: 100px;
-    font-size: 32px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #1AA170;
+    font-style: italic;
+    font-weight: 600;
 }
