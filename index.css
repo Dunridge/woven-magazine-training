@@ -112,6 +112,14 @@ div.see-stories {
 
 /* stories container */
 
+main {
+    background: #edecec;
+}
+
+div.woven-tagline {
+    background: #fff;
+}
+
 div.row-1,
 div.row-2,
 div.row-3,
@@ -199,9 +207,14 @@ section.blogs {
     align-items: center;
 }
 
-.featured-blogs {
+div.blog-row-1, div.blog-row-2 {
     display: flex;
     justify-content: space-around;
+}
+
+.featured-blogs {
+    display: flex;
+    justify-content: center;
     width: 981px;
     margin-bottom: 30px;
 }
@@ -210,6 +223,7 @@ section.blogs {
 .blog-2,
 .blog-3,
 .blog-4 {
+    margin: 10px;
     width: 160px;
 }
 
@@ -317,3 +331,24 @@ div.menue-options > ul > li:nth-child(1) > p:nth-child(1) {
     font-style: italic;
     font-weight: 600;
 }
+
+/* media screens at 720px and lower */
+
+/* the media screen works */
+@media only screen and (max-width: 720px) {
+    div.row-1, div.row-2, div.row-3, div.row-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.featured-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.featured-blogs > div.blog-row-1, div.blog-row-2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
