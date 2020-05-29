@@ -42,6 +42,37 @@ div.main-banner {
     background-repeat: no-repeat;
     background-size: cover;
     height: 722.4px;
+    display: flex;
+    align-items: center;
+}
+
+div.main-banner-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.banner-nav.prev {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    color: white;
+}
+
+div.banner-nav.next {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    color: white;
+}
+
+div.banner-nav.prev:hover, div.banner-nav.next:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* woven tagline */
@@ -296,6 +327,11 @@ footer > .col {
 }
 
 /* overlay menu */
+
+#menue-btn {
+    cursor: pointer;
+}
+
 nav.hidden {
     position: absolute;
     z-index: 10;
@@ -365,6 +401,30 @@ div.menue-options > ul > li:nth-child(1) > p:nth-child(1) {
         justify-content: center;
     }
 
+    div.woven-tagline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.col-1 {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    div.col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    div.col-2 > h2 {
+        position: relative;
+        right: 29%;
+    }
+
     footer > div.col {
         display: flex;
         flex-direction: column;
@@ -384,4 +444,10 @@ div.menue-options > ul > li:nth-child(1) > p:nth-child(1) {
     footer {
         height: 100%;
     }
+}
+
+/* applying minimum width to a website  */
+
+html {
+    min-width: 550px;
 }
