@@ -1,19 +1,27 @@
+let mainTab = document.getElementById('main-tab');
+mainTab.style.position = "fixed";
+mainTab.style.width = "100%";
+mainTab.style.zIndex = 100;
+
 document.getElementById('menue-btn').addEventListener('click', () => {
-    console.log('hi');
     let navElement = document.getElementById('hidden-menue');
+    let menueBtn = document.getElementById('menue-btn');
     if (navElement.style.display === 'none') {
         navElement.style.display = 'block';
+        menueBtn.innerHTML = "close";
     } else {
         navElement.style.display = 'none';
+        menueBtn.innerHTML = "menue";
     }
 
     let mainTab = document.getElementById('main-tab');
+
     if (mainTab.style.position === 'static') {
         mainTab.style.position = 'fixed';
         mainTab.style.width = '100%';
         mainTab.style.zIndex = 100;
     } else {
-        mainTab.style.position = 'static';
+        mainTab.style.position = "fixed";
     }
 });
 

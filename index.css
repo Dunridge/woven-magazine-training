@@ -3,14 +3,22 @@ body {
     margin: 0;
 }
 
-/* making all of the images fit the div */
-/* this doesn't work:
-img {
-    max-width: 100%;
-    height: auto;
-} */
+html {
+    overflow-x: hidden;
+}
 
 /* styling nav  */
+
+#main-tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+i.nav-btn {
+    width: 24px;
+    margin-right: 10px;
+}
 
 nav,
 .shop-menue,
@@ -36,6 +44,7 @@ nav {
     box-shadow: 0px 0.125px;
     margin-top: -0.05px;
 }
+
 
 /* main banner  */
 
@@ -74,7 +83,8 @@ div.banner-nav.next {
     color: white;
 }
 
-div.banner-nav.prev:hover, div.banner-nav.next:hover {
+div.banner-nav.prev:hover,
+div.banner-nav.next:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -153,7 +163,8 @@ div.see-stories {
     align-items: center;
 }
 
-div.see-stories > span, div.see-films > span {
+div.see-stories > span,
+div.see-films > span {
     display: inline-block;
     white-space: nowrap;
 }
@@ -388,6 +399,9 @@ div.menue-options > ul > li:nth-child(1) > p:nth-child(1) {
 }
 
 /* media screens at 720px and lower */
+
+
+
 
 /* the media screen works */
 @media only screen and (max-width: 720px) {
