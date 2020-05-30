@@ -25,6 +25,10 @@ nav,
     align-items: center;
 }
 
+div.search-menue {
+    cursor: pointer;
+}
+
 nav {
     justify-content: space-around;
     height: 50px;
@@ -147,6 +151,11 @@ div.see-films,
 div.see-stories {
     display: flex;
     align-items: center;
+}
+
+div.see-stories > span, div.see-films > span {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 /* stories container */
